@@ -58,12 +58,13 @@ nav {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 50px;
+        top: 40px;
         right: 0;
-        /* padding: 20px; */
+        padding: 1px;
         background-color: #387091;
-        width: 200px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 250px;
+        /* margin-right: 1px; */
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     }
     .menu li {
         margin: 10px 0;
