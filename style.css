@@ -16,7 +16,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(6, 102, 102);
+    background-color: #387091;
     /* background-color: rgb(59, 135, 160); */
     align-items: center;
 }
@@ -48,7 +48,7 @@ input {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #399b7a;
+    background-color: rgb(71, 181, 171);
     color: white;
     border: none;
     border-radius: 10px;

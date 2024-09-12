@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.content {
+.content1 {
     min-height: 100vh;
     /* Para asegurar que haya contenido suficiente para desplazarse */
 }

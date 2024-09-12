@@ -9,7 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgb(6, 102, 102);
+    background-color: #387091;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -61,7 +61,7 @@ nav {
         top: 50px;
         right: 0;
         /* padding: 20px; */
-        background-color: rgb(6, 102, 102);
+        background-color: #387091;
         width: 200px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
