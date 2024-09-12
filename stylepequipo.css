@@ -1,0 +1,25 @@
+.contenedor_equipo {
+    width: 100%;
+    height: 900px;
+}
+
+.datos-equipo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contendedor_jugadores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contendedor_jugador {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 20px;
+}
