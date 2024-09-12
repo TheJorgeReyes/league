@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/balon.webp">
+
+    <!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="navbaja.css" type="text/css">
+    <link rel="stylesheet" href="menu.css" type="text/css">
+
+    <!-- <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById("partidos").style.color = 'rgb(71, 181, 171)';
+         document.getElementById("partidos").style.backgroundColor = '#387091';
+        }
+    </script> -->
+
+
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <img src="https://raw.githubusercontent.com/TheJorgeReyes/league/main/img/LIGA.png" alt="Foto de perfil">
+            <div class="name-liga">La Jabonera</div>
+        </div>
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="#">Estadisticas</a></li>
+                <li><a href="#">Subir Resultados</a></li>
+                <li><a href="#">Tabla de posiciones</a></li>
+                <li><a href="#">R-Equipos</a></li>
+                <li><a href="index.html">Salir</a></li>
+
+
+                <!-- <li>
+                    <form action="cerrar_sesion.php" method="post">
+                        <input type="submit" value="Cerrar sesión">
+                    </form>
+                </li> -->
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <!-- Contenido de la página -->
+
+        <div class="registro">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="fileInput" name="file">
+                <button type="submit">Subir Imagen</button>
+            </form>
+            <div id="imageContainer"></div>
+        </div>
+
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html" id="inicio"><i class="fas fa-home"></i><span>inicio</span></a></li>
+            <li><a href="posiciones.html" id="posiciones"><i class="fas fa-table"></i><span>posiciones</span></a></li>
+            <li><a href="partidos.html" id="partidos"><i class="fas fa-futbol"></i><span>Partidos</span></a></li>
+            <li><a href="equipos.html" id="equipos"><i class="fas fa-user"></i><span>Equipos</span></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let fileInput = document.getElementById('fileInput');
+            let file = fileInput.files[0];
+            let formData = new FormData();
+            formData.append('file', file);
+
+            // Aquí puedes hacer una petición fetch para subir la imagen al servidor
+            fetch('C:\\xampp\\htdocs\\MyLeague2.0\\img\\', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Imagen subida con éxito:', data);
+                    mostrarImagen(file);
+                })
+                .catch(error => {
+                    console.error('Error al subir la imagen:', error);
+                });
+        });
+
+        function mostrarImagen(file) {
+            let reader = new FileReader();
+            reader.onload = function(event) {
+                let img = document.createElement('img');
+                img.src = event.target.result;
+                document.getElementById('imageContainer').appendChild(img);
+            }
+            reader.readAsDataURL(file);
+        }
+    </script>
+</body>
+
+</html>
