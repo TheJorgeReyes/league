@@ -28,7 +28,7 @@
             padding: 5px;
             text-align: left;
             font-size: 19px;
-            border: 2.5px solid #387091;
+            border: 1px solid #387091;
         }
         
         th {
@@ -36,7 +36,12 @@
             color: #ffffff;
             font-size: 16px;
             text-align: justify;
-            border: 2px solid #387091;
+            border: 1px solid #387091;
+        }
+    </style>
+    <style>
+        .selected {
+            background-color: #75b4e7;
         }
     </style>
 </head>
@@ -130,6 +135,14 @@
             <li><a href="equipos.html" id="equipos"><i class="fas fa-user"></i><span>Equipos</span></a></li>
         </ul>
     </nav>
+    <script>
+        document.querySelectorAll('table tr').forEach(row => {
+            row.addEventListener('click', () => {
+                document.querySelectorAll('table tr').forEach(r => r.classList.remove('selected'));
+                row.classList.add('selected');
+            });
+        });
+    </script>
 </body>
 
 </html>
