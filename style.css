@@ -23,8 +23,8 @@ html {
 
 .formulario-login {
     /* width: 200px; */
-    height: 150px;
-    background-color: rgb(6, 102, 102);
+    height: 180px;
+    /* background-color: rgb(6, 102, 102); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;

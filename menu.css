@@ -9,14 +9,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #387091;
+    background-color: rgb(6, 102, 102);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .profile img {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    /* border-radius: %; */
 }
 
 nav {
@@ -45,7 +45,8 @@ nav {
     color: #ffffff;
     text-decoration: none;
     padding-left: 20px;
-     padding: 10px;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #menu-toggle {
@@ -59,7 +60,8 @@ nav {
         position: absolute;
         top: 50px;
         right: 0;
-        background-color: #387091;
+        /* padding: 20px; */
+        background-color: rgb(6, 102, 102);
         width: 200px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
