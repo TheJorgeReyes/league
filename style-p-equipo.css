@@ -19,24 +19,24 @@
     align-items: center;
 }
 
-.contendedor_jugadores {
+.jugadores {
     display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
+    flex-wrap: wrap;
 }
 
-.contendedor_jugador {
+.jugador {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 120px;
+    width: 110px;
     height: 130px;
     border: 4px solid #c1c7c4;
-    padding: 10px;
+    padding: 8px;
     border-radius: 20px;
     margin: 3px;
+}
+
+.jugador img {
+    border-radius: 20px;
 }
