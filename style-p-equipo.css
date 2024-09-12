@@ -1,0 +1,36 @@
+/* * {
+    width: 100%;
+    height: auto;
+} */
+
+.contenedor-equipo {
+    width: 100%;
+    /* height: 1500px; */
+    margin-bottom: 60px;
+}
+
+.datos-equipo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contendedor_jugadores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contendedor_jugador {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 120px;
+    height: 140px;
+    border: 4px solid #bae0d5;
+    padding: 10px;
+    border-radius: 20px;
+}
