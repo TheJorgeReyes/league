@@ -9,7 +9,7 @@
 
     <!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY"></script>
     <link rel="stylesheet" href="navbaja.css" type="text/css">
     <link rel="stylesheet" href="menu.css" type="text/css">
     <script type="text/javascript">
@@ -54,6 +54,7 @@
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vel ea labore tempore dolor? Quod asperiores, officia, numquam quibusdam sit saepe, quam distinctio similique architecto dolores totam iusto provident doloremque.
 
 
+    <div id="map " style="height: 200px;"></div>
 
     <div class="content">
         <!-- Contenido de la página -->
@@ -66,6 +67,31 @@
             <li><a href="equipos.html" id="equipos"><i class="fas fa-user"></i><span>Equipos</span></a></li>
         </ul>
     </nav>
+    <script>
+        function initMap() {
+            // Coordenadas de la ubicación deseada
+            var ubicacion = {
+                lat: 19.682531220098614,
+                lng: -101.27419195661281
+
+            }; // Ejemplo: Ciudad de México
+
+            // Crear el mapa y centrarlo en la ubicación
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: ubicacion
+            });
+
+            // Agregar un marcador en la ubicación
+            var marker = new google.maps.Marker({
+                position: ubicacion,
+                map: map
+            });
+        }
+
+        // Llamar a la función para inicializar el mapa
+        google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
 </body>
 
 </html>

@@ -19,13 +19,32 @@
 
         }
     </script>
-
+    <style>
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            border: 2px solid #2d2e2d;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #1b4560da;
+            color: aliceblue;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div class="profile">
             <img src="https://raw.githubusercontent.com/TheJorgeReyes/league/main/img/LIGA.png" alt="Foto de perfil">
+            <div class="name-liga">La Jabonera</div>
         </div>
         <nav>
             <input type="checkbox" id="menu-toggle">
@@ -50,10 +69,20 @@
 
 
 
-    <h1>welcome LA JABONERA</h1>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci ea enim repudiandae velit quod architecto dicta, facilis tenetur, id numquam? Iusto, doloremque? Consequuntur asperiores reiciendis inventore nesciunt laboriosam? Culpa!
 
-
+    <h1 style="text-align: center;">Partidos del Torneo</h1>
+    <table id="tabla-partidos">
+        <thead>
+            <tr>
+                <th>Local</th>
+                <th>Visitante</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los partidos se insertarán aquí -->
+        </tbody>
+    </table>
+    <script src="script-jornadas.js"></script>
 
 
     <div class="content">
