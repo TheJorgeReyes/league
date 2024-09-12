@@ -1,0 +1,69 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(59, 135, 160); */
+}
+
+.contenedor1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(6, 102, 102);
+    /* background-color: rgb(59, 135, 160); */
+    align-items: center;
+}
+
+.formulario-login {
+    /* width: 200px; */
+    height: 150px;
+    background-color: rgb(6, 102, 102);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(137, 235, 230);
+    margin-bottom: 120px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    font-size: large;
+    background-color: #bbeedad7;
+    border: 1px solid #111111;
+    border-radius: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #399b7a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ir-registrarse {
+    text-decoration: none;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: #95e6c5;
+}
+
+a {
+    color: #a4ebce;
+    text-decoration: none;
+}
