@@ -12,6 +12,12 @@
 
     <link rel="stylesheet" href="navbaja.css" type="text/css">
     <link rel="stylesheet" href="menu.css" type="text/css">
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById("inicio").style.color = 'rgb(71, 181, 171)';
+        }
+    </script>
+
 </head>
 
 <body>
@@ -52,7 +58,7 @@
     </div>
     <nav class="navbar">
         <ul>
-            <li><a href="#"><i class="fas fa-home"></i><span>inicio</span></a></li>
+            <li><a href="#" id="inicio"><i class="fas fa-home"></i><span>inicio</span></a></li>
             <li><a href="#"><i class="fas fa-table"></i><span>posiciones</span></a></li>
             <li><a href="#"><i class="fas fa-futbol"></i><span>Partidos</span></a></li>
             <li><a href="#"><i class="fas fa-user"></i><span>Equipos</span></a></li>

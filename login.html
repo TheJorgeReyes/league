@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        .input-wrapper {
+            position: relative;
+            /* width: 300px; */
+        }
+        
+        .input-wrapper .icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor1">
+
+
+
+        <h2>Iniciar Sesión</h2>
+
+        <form action="" class="formulario-login">
+            <table>
+                <tr>
+                    <td><input type="text" name="user" id="user" placeholder="Usuario"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="input-wrapper">
+                            <input type="password" id="password" placeholder="Contraseña">
+                            <span class="icon" onclick="togglePassword()">👁️</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- <input type="password" name="password" placeholder="password"> -->
+            <button type="button"><a href="home.html">Ingresar</a></button>
+
+        </form>
+
+        <br>
+        <br>
+        <br>
+        <a href=""> olvidaste tu contraseña?</a><br><br>
+        <a href="" class="ir-registrarse"> Registrarse</a><br>
+
+
+
+    </div>
+
+
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const icon = document.querySelector('.icon');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.textContent = '🙈';
+            } else {
+                passwordInput.type = 'password';
+                icon.textContent = '👁️';
+            }
+        }
+    </script>
+</body>
+
+</html>
