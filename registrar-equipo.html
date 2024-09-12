@@ -70,37 +70,38 @@
     </nav>
 
     <script>
-        document.getElementById('uploadForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            let fileInput = document.getElementById('fileInput');
-            let file = fileInput.files[0];
-            let formData = new FormData();
-            formData.append('file', file);
+        //     document.getElementById('uploadForm').addEventListener('submit', function(event) {
+        //         event.preventDefault();
+        //         let fileInput = document.getElementById('fileInput');
+        //         let file = fileInput.files[0];
+        //         let formData = new FormData();
+        //         formData.append('file', file);
 
-            // Aquí puedes hacer una petición fetch para subir la imagen al servidor
-            fetch('C:\\xampp\\htdocs\\MyLeague2.0\\img\\', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => response.json())
-                .then(data => {
-                    console.log('Imagen subida con éxito:', data);
-                    mostrarImagen(file);
-                })
-                .catch(error => {
-                    console.error('Error al subir la imagen:', error);
-                });
-        });
+        //         // Aquí puedes hacer una petición fetch para subir la imagen al servidor
+        //         fetch('C:\\xampp\\htdocs\\MyLeague2.0\\img\\', {
+        //                 method: 'POST',
+        //                 body: formData
+        //             })
+        //             .then(response => response.json())
+        //             .then(data => {
+        //                 console.log('Imagen subida con éxito:', data);
+        //                 mostrarImagen(file);
+        //             })
+        //             .catch(error => {
+        //                 console.error('Error al subir la imagen:', error);
+        //             });
+        //     });
 
-        function mostrarImagen(file) {
-            let reader = new FileReader();
-            reader.onload = function(event) {
-                let img = document.createElement('img');
-                img.src = event.target.result;
-                document.getElementById('imageContainer').appendChild(img);
-            }
-            reader.readAsDataURL(file);
-        }
+        //     function mostrarImagen(file) {
+        //         let reader = new FileReader();
+        //         reader.onload = function(event) {
+        //             let img = document.createElement('img');
+        //             img.src = event.target.result;
+        //             document.getElementById('imageContainer').appendChild(img);
+        //         }
+        //         reader.readAsDataURL(file);
+        //     }
+        //
     </script>
 </body>
 

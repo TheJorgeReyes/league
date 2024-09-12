@@ -29,15 +29,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 110px;
-    height: 130px;
+    /* align-items: center; */
+    width: 100px;
+    height: 120px;
     border: 4px solid #c1c7c4;
-    padding: 8px;
+    padding: 10px;
     border-radius: 20px;
     margin: 3px;
 }
 
 .jugador img {
     border-radius: 20px;
+    width: 90px;
+    height: 90px;
 }
