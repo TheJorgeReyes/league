@@ -24,12 +24,19 @@ html {
 .contenedor1 h3 {
     font-size: 30px;
     color: rgb(71, 181, 171);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: cursive;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .contenedor1 button {
     width: 40%;
     font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(71, 181, 171);
+    color: white;
+    cursor: pointer;
+    border: none;
 }
 
 .contenedor1 img {
