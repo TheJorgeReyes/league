@@ -26,7 +26,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,8 +55,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    width: 100px;
+    align-items: center;
+    width: 120px;
     height: 120px;
     border: 4px solid #c1c7c4;
     padding: 10px;
@@ -66,6 +66,6 @@
 
 .jugador img {
     border-radius: 20px;
-    width: 90px;
-    height: 90px;
+    width: 125px;
+    height: 100px;
 }
