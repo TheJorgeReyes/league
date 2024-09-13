@@ -26,7 +26,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
