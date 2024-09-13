@@ -21,6 +21,22 @@ html {
     align-items: center;
 }
 
+.contenedor1 h3 {
+    font-size: 30px;
+    color: rgb(71, 181, 171);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor1 button {
+    width: 40%;
+    font-size: 20px;
+}
+
+.contenedor1 img {
+    padding: 20px;
+    width: 100%;
+}
+
 .formulario-login {
     /* width: 200px; */
     height: 180px;
